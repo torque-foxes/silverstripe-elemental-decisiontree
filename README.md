@@ -18,3 +18,7 @@ This module provides an easy way to build such tree and to add it to a page as a
 
 ![](docs/en/_images/decisiontree-admin-screenshot.png)
 ![](docs/en/_images/decisiontree-frontend-example.png)
+
+## Additional documentation
+
+* [JSON Output](docs/en/json-output.md)
