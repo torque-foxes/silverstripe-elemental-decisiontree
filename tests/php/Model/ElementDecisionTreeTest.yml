@@ -1,0 +1,26 @@
+DNADesign\SilverStripeElementalDecisionTree\Model\DecisionTreeStep:
+  one:
+    Title: What is your favourite colour?
+    Type: Question
+    Content: <p>Select from the below answers</p>
+  two:
+    Title: Who is your favourite super hero?
+    Type: Question
+
+DNADesign\SilverStripeElementalDecisionTree\Model\DecisionTreeAnswer:
+  one_one:
+    Title: Red
+    QuestionID: =>DNADesign\SilverStripeElementalDecisionTree\Model\DecisionTreeStep.one
+    ResultingStepID: =>DNADesign\SilverStripeElementalDecisionTree\Model\DecisionTreeStep.two
+  one_two:
+    Title: Blue
+    QuestionID: =>DNADesign\SilverStripeElementalDecisionTree\Model\DecisionTreeStep.one
+  one_three:
+    Title: Green
+    QuestionID: =>DNADesign\SilverStripeElementalDecisionTree\Model\DecisionTreeStep.one
+
+DNADesign\SilverStripeElementalDecisionTree\Model\ElementDecisionTree:
+  one:
+    Title: Test Element Decision Tree
+    Introduction: <p>Select answers below</p>
+    FirstStepID: =>DNADesign\SilverStripeElementalDecisionTree\Model\DecisionTreeStep.one
